@@ -39,7 +39,7 @@ By scheduling guest VPs on underlying SMT pairs, the core scheduler offers a str
 
 Note that when the VP is scheduled for a virtual machine without SMT enabled, that VP will consume the entire core when it runs, and the core's sibling SMT thread will be left idle.  This is necessary to provide the correct workload isolation, but impacts overall system performance, especially as the system LPs become over-subscribed - that is, when total VP:LP ratio exceeds 1:1. Therefore, running guest VMs configured without multiple threads per core is a sub-optimal configuration.
 
-### Benefits of the using the core scheduler
+### Benefits of using the core scheduler
 
 The core scheduler offers the following benefits:
 
